@@ -11,9 +11,9 @@ class Site extends CI_Controller {
         $this->home();           
     }
     
-    public function myMenu(){
-        $this->load->library('MyMenu');
-  	$menu = new MyMenu;
+    public function pageMenu(){
+        $this->load->library('my_menu');
+  	$menu = new my_menu;
   	return $menu->show_menu();
     }
     
@@ -34,7 +34,7 @@ class Site extends CI_Controller {
         $data['css'] = $this->header();
         $data['footer'] = $this->footer();
         $data['title'] = "Välkommen!";
-        $data['menu'] = $this->myMenu();
+        $data['menu'] = $this->pageMenu();
         
 // Load View
         $this->load->view('view_home', $data);
@@ -44,7 +44,7 @@ class Site extends CI_Controller {
         $this->load->helper('url');
         $data['css'] = $this->header();
         $data['footer'] = $this->footer();
-        $data['menu'] = $this->myMenu();
+        $data['menu'] = $this->pageMenu();
         $data['title'] = "Om oss!";
         
 // Load view
@@ -54,7 +54,7 @@ class Site extends CI_Controller {
     function getValues(){
         $this->load->helper('url');
         $data['css'] = $this->header();
-        $data['menu'] = $this->myMenu();
+        $data['menu'] = $this->pageMenu();
         $data['footer'] = $this->footer();
         $data['title'] = "Gästboken!";
         
