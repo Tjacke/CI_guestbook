@@ -1,0 +1,49 @@
+!SESSION 2013-04-15 12:39:44.000 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.7.0_07
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sv_SE
+Framework arguments:  -product org.eclipse.epp.package.php.product -product org.eclipse.epp.package.php.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.php.product -data E:\EasyPHP1210\EasyPHP-12.0\www\phpmvc\ci_gb -product org.eclipse.epp.package.php.product
+
+!ENTRY org.eclipse.core.jobs 4 2 2013-04-15 12:44:08.312
+!MESSAGE An internal error occurred during: "Install download1".
+!STACK 0
+java.lang.IllegalArgumentException: Comparison method violates its general contract!
+	at java.util.ComparableTimSort.mergeHi(Unknown Source)
+	at java.util.ComparableTimSort.mergeAt(Unknown Source)
+	at java.util.ComparableTimSort.mergeForceCollapse(Unknown Source)
+	at java.util.ComparableTimSort.sort(Unknown Source)
+	at java.util.ComparableTimSort.sort(Unknown Source)
+	at java.util.Arrays.sort(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.hasValidMirror(MirrorSelector.java:317)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:517)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:576)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:248)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:223)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:179)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:115)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:565)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:63)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2013-04-15 12:45:13.812
+!MESSAGE An internal error occurred during: "Install download0".
+!STACK 0
+java.lang.IllegalArgumentException: Comparison method violates its general contract!
+	at java.util.ComparableTimSort.mergeHi(Unknown Source)
+	at java.util.ComparableTimSort.mergeAt(Unknown Source)
+	at java.util.ComparableTimSort.mergeForceCollapse(Unknown Source)
+	at java.util.ComparableTimSort.sort(Unknown Source)
+	at java.util.ComparableTimSort.sort(Unknown Source)
+	at java.util.Arrays.sort(Unknown Source)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorSelector.hasValidMirror(MirrorSelector.java:317)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.downloadArtifact(SimpleArtifactRepository.java:517)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:576)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.getArtifact(MirrorRequest.java:248)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transferSingle(MirrorRequest.java:223)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.transfer(MirrorRequest.java:179)
+	at org.eclipse.equinox.internal.p2.artifact.repository.MirrorRequest.perform(MirrorRequest.java:115)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository.getArtifact(SimpleArtifactRepository.java:565)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.DownloadJob.run(DownloadJob.java:63)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
