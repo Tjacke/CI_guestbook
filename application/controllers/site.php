@@ -131,5 +131,11 @@ class Site extends CI_Controller {
         redirect('/site/getValues/', 'refresh');
     }
     
-    
+    public function createTable(){
+        $this->load->helper('url');
+        $this->load->model("get_db");
+        $this->get_db->doTable();
+        redirect('/site/getValues/', 'refresh');
+        
+    }
 }

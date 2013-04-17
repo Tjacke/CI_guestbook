@@ -11,17 +11,23 @@
  
     <? echo $menu; ?>
   
-   
+<?
+    if($result === null) {
+    echo "Tabel saknas!<br />";
+    echo anchor('site/createTable', "Skapa en tabell till gästboken"); 
+    
+} else { ?>
+
 <? $this->load->helper(array('form','url')); ?>
 <? echo anchor('site/deleteAll', "Ta bort alla poster"); ?>
- <p>
+<p>
 <? echo validation_errors(); ?>
 <? echo form_open('site/insertValues'); ?>
 <? echo $guest		.' <br /> '.form_input($fguest, set_value('guest')); ?></br>
 <? echo $message	.' <br /> '.form_textarea($fmessage, set_value('message')); ?></br>
 <? echo form_submit('mysubmit','Submit!');  ?>
 <? echo form_close(); ?>  
- </p>
+</p>
 <p> 
    <?php 
   
@@ -32,7 +38,7 @@
        echo anchor('site/deleteValue/'.$row->id, 'Delete');
        echo "</div><br />";
   }
-   
+} //end if
    ?>
    </p>
    
