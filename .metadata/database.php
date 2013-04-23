@@ -48,10 +48,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '';
-$db['default']['database'] = 'site';
+$db['default']['hostname'] = 'visionnjurunda.se.mysql';
+$db['default']['username'] = 'visionnjurunda_';
+$db['default']['password'] = 'ADfH7jNT';
+$db['default']['database'] = 'visionnjurunda_';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

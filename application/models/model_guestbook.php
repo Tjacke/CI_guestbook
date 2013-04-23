@@ -1,6 +1,6 @@
 <?php
 
-class get_db extends CI_Model{
+class Model_guestbook extends CI_Model{
     
     public function __construct() {
         parent::__construct();

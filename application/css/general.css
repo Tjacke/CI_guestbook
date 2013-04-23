@@ -7,3 +7,27 @@
 */
 
 @import "form.css";
+@import "pagestyle.css";
+@import "menu.css";
+
+html{
+	overflow-y:scroll;
+	}
+.clear{
+	clear: both;
+}
+
+#left_col{
+	display: block;
+	float: left;
+	width: 200px;
+}
+#right_col{
+	display: block;
+	float: right;
+	width: 759px;
+	border-left:1px solid #d0d0d0;
+}
+.bb{
+	border-bottom:1px solid #d0d0d0;
+}

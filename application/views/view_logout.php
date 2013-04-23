@@ -1,16 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title><?php echo $title; ?></title>
-</head>
-<div id="container">
-    <h1>Välkommen till min Supersida!</h1>
+<?php if (!defined('BASEPATH')) exit ('No direct script access allowed'); ?>
+
+<div id="left_col"><? $this->load->view('view_login'); ?></div>
+    <div id="right_col">
+        <h1>Du är utloggad!</h1>
+    
+        <?
         
-    <? echo $menu; ?>
-   
-       <p>Content...</p>
-</div>
-<? echo $footer; ?>
-</body>
-</html>
+        echo '<p>';
+        echo 'Välkommen åter!';
+        echo '</p>';
+        
+        ?>
+       
+        
+    <br />
+   </div>  <!-- end right_col -->
